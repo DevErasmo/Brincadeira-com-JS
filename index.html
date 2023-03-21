@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem de namoro</title>
+</head>
+<style type="text/css">
+    body {
+      background: url("https://th.bing.com/th/id/OIP.GF0GGueH6pnty1X_Ta3KWAHaF7?pid=ImgDet&rs=1")
+        no-repeat fixed;
+      background-size: cover;
+      box-sizing: border-box;
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 60px;
+      color: white;
+      text-align: center;
+      width: 100%;
+      overflow: clip;
+    }
+    .yesclass,
+    .noclass {
+      height: 60px;
+      width: 100px;
+      border: 1px solid black;
+      border-radius: 30px;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <h1>Hey, tu sabe que eu gosto muito de ti né? Namora comigo 
+        de novo... Por favor??
+        
+    <div class="btn">
+      <button type="button" class="yesclass" onclick="clkfunc()">Sim</button>
+      <button type="button" class="noclass">Não</button>
+    </div>
+    <script type="text/javascript">
+      var sim = document.querySelector(".yesclass");
+
+      //First, we make a code for "YES" option
+      function clkfunc() {
+        alert("Obrigado, Fez uma escolha inteligente kkkkkk");
+      }
+
+      //for no option
+      const no = document.querySelector(".noclass");
+      no.addEventListener("click", () => {
+        move();
+      });
+      no.addEventListener("mouseover", () => {
+        move();
+      });
+      function move() {
+        let i = Math.floor(Math.random() * window.innerWidth) + 1;
+        let j = Math.floor(Math.random() * window.innerHeight) + 1;
+        no.style.position = "absolute";
+        no.style.right = i + "px";
+        no.style.top = j + "px";
+      }
+      </script>
+<body>
+    
+</body>
+</html>
